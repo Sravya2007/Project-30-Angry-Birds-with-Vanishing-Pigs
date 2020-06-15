@@ -39,7 +39,7 @@ function setup(){
     bird = new Bird(200,50);
 
     //log6 = new Log(230,180,80, PI/2);
-    slingshot = new SlingShot(bird.body,{x:200, y:50});
+    slingshot = new SlingShot(bird.body,{x:250, y:50});
 }
 
 function draw(){
@@ -61,10 +61,10 @@ function draw(){
     log4.display();
     log5.display();
 
-    bird.display();
     platform.display();
     //log6.display();
-    slingshot.display();    
+    slingshot.display(); 
+    bird.display();   
 }
 
 function mouseDragged(){
